@@ -93,9 +93,19 @@ if (jasmine.webos.getPalmVersionString()) {
         expect(controller.showDialog).toBe(Mojo.doNothing);
       });
 
-      it("showBanner", function() {
-        expect(controller.showBanner).toBe(Mojo.doNothing);
+      it("popupSubmenu", function() {
+        expect(controller.popupSubmenu).toBe(Mojo.doNothing);
+      });
+
+      it("setInitialFocusedElement", function() {
+        expect(controller.setInitialFocusedElement).toBe(Mojo.doNothing);
       });
     });
+	
+	describe("should not provide stubs for", function () {
+      it("showBanner", function() {
+        expect(controller.showBanner).not.toBeDefined();
+      });
+	});
   });
 }

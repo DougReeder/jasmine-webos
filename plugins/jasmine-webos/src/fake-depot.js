@@ -66,6 +66,7 @@ jasmine.webos.FakeDepot = function(seedObject) {
   return self;
 
   function seedDepot() {
+  	var key;
     for (key in seedObject) {
       if (seedObject.hasOwnProperty(key)) {
         self.poke(key, seedObject[key]);
@@ -94,7 +95,7 @@ jasmine.webos.FakeDepot = function(seedObject) {
         performFailure(call);
       });
       calls.clear();
-    }
+    };
   }
 
   function defaultFailure(call) {

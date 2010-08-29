@@ -22,7 +22,8 @@ if (jasmine.webos.getPalmVersionString()) {
   jasmine.webos.StubSceneController.prototype.serviceRequest = Mojo.doNothing;
   jasmine.webos.StubSceneController.prototype.modelChanged = Mojo.doNothing;
   jasmine.webos.StubSceneController.prototype.showDialog = Mojo.doNothing;
-  jasmine.webos.StubSceneController.prototype.showBanner = Mojo.doNothing;
+  jasmine.webos.StubSceneController.prototype.popupSubmenu = Mojo.doNothing;
+  jasmine.webos.StubSceneController.prototype.setInitialFocusedElement = Mojo.doNothing;
 }
 
 jasmine.webos.createStubSceneAssistant = function(sceneArguments) {
